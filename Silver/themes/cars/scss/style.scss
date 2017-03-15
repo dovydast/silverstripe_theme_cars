@@ -1,0 +1,25 @@
+@mixin background-size($size){
+    -webkit-background-size:$size;
+  -moz-background-size:$size ;
+  -o-background-size:$size ;
+  background-size:$size ;
+}
+
+html{
+    body{
+        height:100%;
+    }
+}
+
+body{
+    background-image: url("../images/bg.jpg");
+    @include background-size(cover);
+    background-repeat:no-repeat;
+  
+    
+}
+
+#txt-color{
+    color:#ccc;
+}
+

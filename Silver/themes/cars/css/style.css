@@ -1,0 +1,15 @@
+html body {
+  height: 100%; }
+
+body {
+  background-image: url("../images/bg.jpg");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+#txt-color {
+  color: #ccc; }
+
+/*# sourceMappingURL=style.css.map */

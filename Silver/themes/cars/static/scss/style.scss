@@ -1,0 +1,49 @@
+@mixin background-size($size){
+    -webkit-background-size:$size;
+  -moz-background-size:$size ;
+  -o-background-size:$size ;
+  background-size:$size ;
+}
+
+html{
+    body{
+        height:100%;
+    }
+}
+
+body{
+    background-image: url("../images/bg.jpg");
+    @include background-size(cover);
+    min-height:500px;
+    background-attachment: fixed;
+    background-repeat:no-repeat;
+    
+    
+    
+}
+
+#txt-color{
+    color:#fff !important;
+    font-family:'Ubuntu', sans-serif;
+}
+
+#txt{
+    color:#fff !important;
+    font-size:18px;
+    font-family:'Ubuntu', sans-serif;
+}
+
+.parallax {
+    /* The image used */
+    margin-top:25%;
+    background-image: url("../images/red.jpg");
+
+    /* Set a specific height */
+    min-height: 300px; 
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
